@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Blinker", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+@layer components {
+    .underline-center-animation-dark::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid white;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 250ms ease-in-out;
+    }
+
+    .underline-center-animation-dark:hover::after {
+        transform: scaleX(1);
+    }
+}
