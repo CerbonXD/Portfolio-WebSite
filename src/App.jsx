@@ -6,9 +6,13 @@ import { Outlet } from "react-router-dom"
 export default function App() {
   return (
     <>
-        <Header/>
-        <Outlet/>
-        <Footer/>
+        <div className="flex flex-col h-screen">
+            <Header/>
+            <main className="grow dark:bg-[#1A202C]">
+                <Outlet/>
+            </main>
+            <Footer/>
+        </div>
     </>
   )
 }

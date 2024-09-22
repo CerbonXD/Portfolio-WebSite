@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className="h-[3.75rem] px-20 dark:bg-[#171923] dark:text-white">
+        <footer className="min-h-[3.75rem] px-20 dark:bg-[#171923] dark:text-white">
             <div className="flex justify-between items-center h-full">
                 <p>Designed and Developed by Felipe Cerboncini</p>
                 <p>Copyright © 2024 FC</p>
