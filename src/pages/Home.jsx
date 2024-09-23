@@ -2,7 +2,7 @@ import ButtonLink from "../components/ButtonLink/ButtonLink.jsx";
 
 export default function Home() {
     return (
-        <div className="flex flex-col justify-center gap-10 h-full">
+        <div className="flex flex-col justify-center gap-10 h-screen">
             <h1 className="dark:text-white text-6xl text-center">
                 Hi, my name is Felipe.
                 <br></br>
