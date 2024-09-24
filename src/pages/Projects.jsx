@@ -16,10 +16,13 @@ export default function Projects() {
     }
 
     return (
-        <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
-            {data.map((project) => (
-                <Project title={project.title} description={project.description} link={project.link} img={project.image} badges={project.badges}></Project>
-            ))}
+        <div>
+
+            <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
+                {data.map((project) => (
+                    <Project title={project.title} description={project.description} link={project.link} img={project.image} badges={project.badges}></Project>
+                ))}
+            </div>
         </div>
     )
 }
