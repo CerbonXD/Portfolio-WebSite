@@ -17,8 +17,8 @@ export default function Projects() {
 
     return (
         <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
-            {data.map((item) => (
-                <Project title={item.title} description={item.description} link={item.link} img={item.image} badges={item.badges}></Project>
+            {data.map((project) => (
+                <Project title={project.title} description={project.description} link={project.link} img={project.image} badges={project.badges}></Project>
             ))}
         </div>
     )
