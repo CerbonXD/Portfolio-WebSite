@@ -29,7 +29,7 @@ export default function Projects() {
     });
 
     return (
-        <div className="h-screen">
+        <div className="mb-[4.375rem]">
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
                 <FilterButton label={all} isActive={filter === all} onClick={() => setFilter(all)} />
                 <FilterButton label={sites} isActive={filter === sites} onClick={() => setFilter(sites)} />
