@@ -19,7 +19,7 @@ export default function Project({ title, description, link, badges, img }) {
                 </div>
                 <div className="flex gap-[0.625rem]">
                     {badges.map((badge) => (
-                        <Badge label={badge.label} color={badge.color}></Badge>
+                        <Badge key={badge.label} label={badge.label} color={badge.color}></Badge>
                     ))}
                 </div>
             </div>
