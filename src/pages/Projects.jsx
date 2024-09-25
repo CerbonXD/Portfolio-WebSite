@@ -6,10 +6,16 @@ export default function Projects() {
     const [data, setData] = useState(null);
     const [filter, setFilter] = useState('All'); // Manage the selected filter
 
-    // Filters
-    const all = "All"
-    const sites = "Sites"
-    const minecraftMods = "Minecraft Mods"
+    const filters = ["All", "Sites", "Minecraft Mods"]
+
+    const filteredProjects = data.filter(project => {
+        switch (filter) {
+            case "All": return true;
+            case "Sites": return project.badges.some(badge => badge.label.toUpperCase() === 'REACT');
+            case "Minecraft Mods": return project.badges.some(badge => badge.label.toUpperCase() === 'MOD');
+            default: return false;
+        }
+    });
 
     useEffect(() => {
         fetch('/projects.json')
@@ -18,22 +24,12 @@ export default function Projects() {
             .catch(error => console.error('Error fetching data:', error));
     }, []);
 
-    if (!data) {
-        return <div>Loading...</div>;
-    }
-    const filteredProjects = data.filter(project => {
-        if (filter === all) return true
-        else if (filter === sites) return project.badges.some(badge => badge.label.toUpperCase() === 'REACT')
-        else if (filter === minecraftMods) return project.badges.some(badge => badge.label.toUpperCase() === 'MOD')
-        return false;
-    });
-
     return (
         <div className="mb-[4.375rem]">
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
-                <FilterButton label={all} isActive={filter === all} onClick={() => setFilter(all)} />
-                <FilterButton label={sites} isActive={filter === sites} onClick={() => setFilter(sites)} />
-                <FilterButton label={minecraftMods} isActive={filter === minecraftMods} onClick={() => setFilter(minecraftMods)} />
+                {filters.map((f) => (
+                    <FilterButton key={f} label={f} isActive={filter === f} onClick={() => setFilter(f)}></FilterButton>
+                ))}
             </div>
             <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
                 {filteredProjects.map((project) => (
