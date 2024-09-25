@@ -1,9 +1,21 @@
 [
   {
+    "title": "CERBON's API",
+    "description": "A library mod for CERBON's Minecraft Mods. (My mods)",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/cerbons-api",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/925/652/256/256/638394541002989914.jpeg",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      }
+    ]
+  },
+  {
     "title": "Bosses of Mass Destruction",
     "description": "A Minecraft mod that add new Bosses to the game.",
     "link": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
-    "image": "/public/bomd.png",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/909/606/256/256/638362844738980011.png",
     "badges": [
       {
         "label": "MOD",
@@ -15,7 +27,7 @@
     "title": "Queen Bee",
     "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
     "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/796/322/256/256/638156323381933157.png",
     "badges": [
       {
         "label": "MOD",
@@ -24,10 +36,10 @@
     ]
   },
   {
-    "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
-    "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "title": "Better Beacons",
+    "description": "New UI, new features, new effects and new advancements. Improves Minecraft's beacon.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/cerbons-better-beacons",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/887/38/256/256/638323899873399879.png",
     "badges": [
       {
         "label": "MOD",
@@ -36,10 +48,10 @@
     ]
   },
   {
-    "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
-    "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "title": "Just Enough Beacons Reforged",
+    "description": "JEI addon to display useful information about beacons.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/876/576/256/256/638300512066520740.png",
     "badges": [
       {
         "label": "MOD",
@@ -48,10 +60,10 @@
     ]
   },
   {
-    "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
-    "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "title": "Better Totem of Undying",
+    "description": "An improved version of Minecraft's Totem of Undying, offering new functionalities and extensive customization options for Modpack developers.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/better-totem-of-undying",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/873/85/256/256/638292747176714352.png",
     "badges": [
       {
         "label": "MOD",
@@ -60,10 +72,10 @@
     ]
   },
   {
-    "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
-    "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "title": "Talk Balloons",
+    "description": "Add bubbles above player heads when they send a message in the chat.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/talk-balloons",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/969/395/256/256/638470181651884823.png",
     "badges": [
       {
         "label": "MOD",
@@ -72,14 +84,234 @@
     ]
   },
   {
-    "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
-    "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
-    "image": "/public/bomd.png",
+    "title": "Sugared Concrete Powder",
+    "description": "Combine sugar with concrete powder and prevent it from harden when touching water.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/sugared-concrete-powder",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/929/362/256/256/638401520636406303.png",
     "badges": [
       {
         "label": "MOD",
         "color": "#FB7171"
+      }
+    ]
+  },
+  {
+    "title": "Keep Stepping",
+    "description": "Toggle between Step Up blocks smoothly, Auto Jump or disable both.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/keep-stepping",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/966/200/256/256/638465438595625307.jpeg",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      }
+    ]
+  },
+  {
+    "title": "Beautiful Enchanted Books",
+    "description": "Each enchanted book will now have a different texture.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/1059/990/256/256/638591533953639737.webp",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Epic Paragliders [FORK]",
+    "description": "Epic Paragliders Fork fixing compatibility with Epic Fight and Paraglider mods.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/epic-paragliders-fork",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/1011/580/256/256/638535637557301982.jpeg",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Area Event",
+    "description": "Allows you to create custom area events in Minecraft such as boss area Events with custom damage tracking.",
+    "link": "",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Mob Spawn Control",
+    "description": "Adds an invisible block similar to a spawner that you can configure.",
+    "link": "",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Banner Claim",
+    "description": "Add tiered banners to Minecraft that lets you claim area.",
+    "link": "https://github.com/CERBON-s-Comissions/Banner-Claim",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Electrum Gear",
+    "description": "Adds eletric armor to Minecraft with custom sound and functionality.",
+    "link": "https://github.com/CERBON-s-Comissions/Electrum-Gear",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Daylight Zombies",
+    "description": "Allow zombies to spawn during daytime.",
+    "link": "https://github.com/CERBON-s-Comissions/Daylight-Zombies",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2CBsJiKKFxnVZkFiYIxYaIRemgHnUN8L8g&s.png",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Ninja's Cash",
+    "description": "I created the algorithm used to add all possible crafting recipes for each currency.",
+    "link": "https://www.curseforge.com/minecraft/mc-mods/ninjas-cash",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/14/628/256/256/635601139143682727.jpeg",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Japanese Emoji Commands",
+    "description": "Kaomoji in Minecraft via commands. I updated the mod to 1.20.X.",
+    "link": "https://github.com/CERBON-s-Comissions/japanese-emoji-commands",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/352/134/256/256/637507325472965417.png",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Road Stuff",
+    "description": "Adds road related blocks. I updated the mod to 1.20.1.",
+    "link": "https://github.com/CERBON-s-Comissions/roadstuff",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/340/934/256/256/637483294899272686.png",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Mapper Base",
+    "description": "Base mod for Mapper's mods. I updated the mod to 1.20.1.",
+    "link": "https://github.com/CERBON-s-Comissions/mapperbase",
+    "image": "https://media.forgecdn.net/avatars/thumbnails/254/499/256/256/637198787927132045.png",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Betonquest GUI",
+    "description": "A 1.20.4 port for betonquest gui. This is the client / Forge side.",
+    "link": "https://github.com/CERBON-s-Comissions/betonquest-gui",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
+      }
+    ]
+  },
+  {
+    "title": "Betonquest GUI Plugin",
+    "description": "A 1.20.4 port for betonquest gui. This is plugin side.",
+    "link": "https://github.com/CERBON-s-Comissions/betonquest-gui-plugin",
+    "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
+    "badges": [
+      {
+        "label": "MOD",
+        "color": "#FB7171"
+      },
+      {
+        "label": "COMMISSION",
+        "color": "#EBB376"
       }
     ]
   }
