@@ -38,7 +38,7 @@
 }
 
 .fade-enter-active {
-    @apply opacity-100 transition-opacity duration-300;
+    @apply opacity-100 transition-opacity duration-500;
 }
 
 .fade-exit {
@@ -46,5 +46,5 @@
 }
 
 .fade-exit-active {
-    @apply opacity-0 transition-opacity duration-300;
+    @apply opacity-0 transition-opacity duration-500;
 }
