@@ -3,11 +3,17 @@ import {useEffect, useState} from "react";
 import FilterButton from "../components/FilterButton/FilterButton.jsx";
 
 export default function Projects() {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
     const [filter, setFilter] = useState('All'); // Manage the selected filter
 
     const filters = ["All", "Sites", "Minecraft Mods"]
 
+    useEffect(() => {
+        fetch('/projects.json')
+            .then(response => response.json())
+            .then(data => setData(data))
+            .catch(error => console.error('Error fetching data:', error));
+    }, []);
     const filteredProjects = data.filter(project => {
         switch (filter) {
             case "All": return true;
@@ -16,13 +22,6 @@ export default function Projects() {
             default: return false;
         }
     });
-
-    useEffect(() => {
-        fetch('/projects.json')
-            .then(response => response.json())
-            .then(data => setData(data))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
 
     return (
         <div className="mb-[4.375rem]">
