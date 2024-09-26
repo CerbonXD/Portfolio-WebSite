@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Badge({ label, color }) {
     return (
         <div>
@@ -6,5 +8,10 @@ export default function Badge({ label, color }) {
             </div>
         </div>
     );
+}
+
+Badge.propTypes = {
+    label: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired
 }
 

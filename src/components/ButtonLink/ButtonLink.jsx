@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function ButtonLink({label, to}) {
     return (
@@ -11,4 +12,9 @@ export default function ButtonLink({label, to}) {
             </Link>
         </button>
     )
+}
+
+ButtonLink.propTypes = {
+    label: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired
 }

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function FilterButton({ label, isActive, onClick }) {
     const buttonHoverCss = isActive ? " hover:bg-[#6A1FC0]/[.14]" : " hover:bg-white/[.08]"
 
@@ -9,4 +11,10 @@ export default function FilterButton({ label, isActive, onClick }) {
             {label}
         </button>
     );
+}
+
+FilterButton.propTypes = {
+    label: PropTypes.string.isRequired,
+    isActive: PropTypes.bool,
+    onClick: PropTypes.func,
 }
