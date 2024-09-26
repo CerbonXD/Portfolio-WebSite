@@ -34,13 +34,13 @@ export default function Projects() {
         <div className="mb-[4.375rem]">
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
                 {filters.map((f) => (
-                    <FilterButton key={f} label={f} isActive={filter === f} onClick={() => {setFilter(f); setVisibleProjects(8)}} />
+                    <FilterButton key={f} label={f} isActive={filter === f} onClick={() => {setFilter(f); filter !== f ? setVisibleProjects(8) : null}} />
                 ))}
             </div>
             <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
                 {filteredProjects.slice(0, visibleProjects).map((project, index) => (
                     <motion.div
-                        key={project.title}
+                        key={`${project.title}-${filter}`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: (index % 8) * 0.15 }}>
