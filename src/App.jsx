@@ -13,7 +13,8 @@ export default function App() {
                 <motion.div
                     key={location.pathname}
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}>
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.10 }}>
                     <Outlet/>
                 </motion.div>
             </main>
