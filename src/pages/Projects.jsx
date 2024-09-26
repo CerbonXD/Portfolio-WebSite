@@ -1,6 +1,7 @@
 import Project from "../components/Project/Project.jsx";
 import { useEffect, useState } from "react";
 import FilterButton from "../components/FilterButton/FilterButton.jsx";
+import { motion } from 'framer-motion';
 
 export default function Projects() {
     const [data, setData] = useState([]);
@@ -26,9 +27,9 @@ export default function Projects() {
     });
 
     const handleShowMore = () => {
-        setVisibleProjects(prevAmount => prevAmount + 8);
+        setVisibleProjects(prevAmount => Math.min(prevAmount + 8, filteredProjects.length));
     };
-
+    
     return (
         <div className="mb-[4.375rem]">
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
@@ -37,14 +38,20 @@ export default function Projects() {
                 ))}
             </div>
             <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
-                {filteredProjects.slice(0, visibleProjects).map((project) => (
-                    <Project
+                {filteredProjects.slice(0, visibleProjects).map((project, index) => (
+                    <motion.div
                         key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        link={project.link}
-                        img={project.image}
-                        badges={project.badges} />
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: (index % 8) * 0.15 }}>
+                        <Project
+                            title={project.title}
+                            description={project.description}
+                            link={project.link}
+                            img={project.image}
+                            badges={project.badges}
+                        />
+                    </motion.div>
                 ))}
             </div>
             {visibleProjects < filteredProjects.length && (
