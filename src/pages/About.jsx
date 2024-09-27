@@ -1,4 +1,5 @@
 import SkillCard from "../components/SkillCard/SkillCard.jsx";
+import GitHubCalendar from "react-github-calendar";
 
 export default function About() {
     const skills = [
@@ -18,7 +19,7 @@ export default function About() {
     ];
 
     return (
-        <div className="px-20 mt-[4.375rem]">
+        <div className="px-20 my-[4.375rem]">
             <section className="flex justify-between items-center max-w-[120rem] mx-auto">
                 <div className="max-w-3xl dark:text-white">
                     <h1 className="text-6xl">
@@ -38,10 +39,27 @@ export default function About() {
                     Professional <span className="dark:text-[#6A1FC0]">Skillset</span>
                 </h1>
 
-                <div className="flex justify-center flex-wrap gap-[3.125rem] max-w-7xl mx-auto mb-[4.375rem]">
+                <div className="flex justify-center flex-wrap gap-[3.125rem] max-w-7xl mx-auto">
                     {skills.map((skill, index) => (
                         <SkillCard key={index} skillName={skill.name} svg={skill.svg}/>
                     ))}
+                </div>
+            </section>
+
+            <section>
+                <h1 className="text-6xl text-center dark:text-white my-[4.375rem]">
+                    Days I <span className="dark:text-[#6A1FC0]">Code</span>
+                </h1>
+
+                <div className="dark:text-white flex justify-center">
+                    <GitHubCalendar
+                        username="CerbonXD"
+                        blockSize={15}
+                        blockMargin={5}
+                        theme={{
+                            dark: ["#333", "#6A1FC0"]
+                        }}
+                        fontSize={16}/>
                 </div>
             </section>
         </div>
