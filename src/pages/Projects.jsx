@@ -33,7 +33,7 @@ export default function Projects() {
     };
 
     return (
-        <div className="mb-[4.375rem] min-h-[80vh]">
+        <section className="mb-[4.375rem] min-h-[80vh]">
             {/* Filter buttons */}
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
                 {filters.map((f) => (
@@ -81,6 +81,6 @@ export default function Projects() {
                     </button>
                 </div>
             )}
-        </div>
+        </section>
     );
 }
