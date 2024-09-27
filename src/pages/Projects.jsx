@@ -7,6 +7,7 @@ export default function Projects() {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('All');
     const [visibleProjects, setVisibleProjects] = useState(8);
+    const [completedAnimations, setCompletedAnimations] = useState(0); // Track animation completion
 
     useEffect(() => {
         fetch('/projects.json')
@@ -46,6 +47,7 @@ export default function Projects() {
                             if (filter !== f) {
                                 setFilter(f);
                                 setVisibleProjects(8); // Reset visible projects on filter change
+                                setCompletedAnimations(0); // Reset animation counter on filter change
                             }
                         }}
                     />
@@ -59,7 +61,10 @@ export default function Projects() {
                         key={`${project.title}-${filter}`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: (index % 8) * 0.15 }}>
+                        transition={{ delay: (index % 8) * 0.15 }}
+                        onAnimationComplete={() => {
+                            setCompletedAnimations(prev => prev + 1);
+                        }}>
                         <Project
                             title={project.title}
                             description={project.description}
@@ -72,14 +77,20 @@ export default function Projects() {
             </div>
 
             {/* Show more button */}
-            {visibleProjects < filteredProjects.length && (
-                <div className="flex justify-center mt-[4.375rem]">
-                    <button
-                        className="px-5 py-2 rounded-lg bg-white/[.04] dark:text-white hover:brightness-90"
-                        onClick={handleShowMore}>
-                        Show More
-                    </button>
-                </div>
+            {visibleProjects < filteredProjects.length && completedAnimations === visibleProjects && (
+                <motion.div
+                    key=""
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.15 }}>
+                    <div className="flex justify-center mt-[4.375rem]">
+                        <button
+                            className="px-5 py-2 rounded-lg bg-white/[.04] dark:text-white hover:brightness-90"
+                            onClick={handleShowMore}>
+                            Show More
+                        </button>
+                    </div>
+                </motion.div>
             )}
         </section>
     );
