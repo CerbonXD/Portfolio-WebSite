@@ -19,7 +19,7 @@ export default function About() {
 
     return (
         <div className="px-20 mt-[4.375rem]">
-            <section className="flex justify-between items-center">
+            <section className="flex justify-between items-center max-w-[120rem] mx-auto">
                 <div className="max-w-3xl dark:text-white">
                     <h1 className="text-6xl">
                         About <span className="dark:text-[#6A1FC0]">Me</span>
