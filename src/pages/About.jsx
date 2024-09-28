@@ -33,6 +33,8 @@ export default function About() {
 
     return (
         <div className="px-20 my-[4.375rem]">
+
+            {/* About Me Section */}
             <section className="flex justify-between items-center max-w-[120rem] mx-auto">
                 <div className="max-w-[50%] dark:text-white">
                     <h1 className="text-6xl">
@@ -51,6 +53,7 @@ export default function About() {
                 <img className="w-[800px]" src="/public/dev_coding.svg" alt="Dev coding vector image"></img>
             </section>
 
+            {/* Skills Section */}
             <section>
                 <h1 className={h1CenterCss}>
                     Professional <span className="dark:text-[#6A1FC0]">Skillset</span>
@@ -63,6 +66,7 @@ export default function About() {
                 </div>
             </section>
 
+            {/* Tools Section */}
             <section>
                 <h1 className={h1CenterCss}>
                     Tools I <span className="dark:text-[#6A1FC0]">use</span>
@@ -75,6 +79,7 @@ export default function About() {
                 </div>
             </section>
 
+            {/* GitHub Calendar Section */}
             <section>
                 <h1 className={h1CenterCss}>
                     Days I <span className="dark:text-[#6A1FC0]">Code</span>
