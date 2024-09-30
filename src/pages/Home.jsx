@@ -2,7 +2,7 @@ import ButtonLink from "../components/ButtonLink/ButtonLink.jsx";
 import {useTranslation} from "react-i18next";
 
 export default function Home() {
-    const [t, i18n] = useTranslation();
+    const [t] = useTranslation();
 
     return (
         <section className="flex flex-col justify-center gap-10 h-screen">
