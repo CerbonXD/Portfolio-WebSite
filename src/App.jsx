@@ -7,15 +7,10 @@ export default function App() {
     const location = useLocation();
 
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-screen text-black dark:text-white">
             <Header/>
             <main className="grow dark:bg-[#1A202C]">
-                <motion.div
-                    key={location.pathname}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{opacity: 0}}
-                    transition={{ delay: 0.10 }}>
+                <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}} transition={{ delay: 0.10 }}>
                     <Outlet/>
                 </motion.div>
             </main>

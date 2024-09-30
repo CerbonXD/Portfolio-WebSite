@@ -29,14 +29,14 @@ export default function About() {
         {name: "Windows 11", svg: <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width={svgSize} height={svgSize} viewBox="0,0,256,256"><g fill="currentColor" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none"><g transform="scale(5.12,5.12)"><path d="M4,4h20v20h-20zM26,4h20v20h-20zM4,26h20v20h-20zM26,26h20v20h-20z"></path></g></g></svg>}
     ]
 
-    const h1CenterCss = "text-6xl text-center dark:text-white my-[4.375rem]"
+    const h1CenterCss = "text-6xl text-center my-[4.375rem]"
 
     return (
         <div className="px-20 my-[4.375rem]">
 
             {/* About Me Section */}
             <section className="flex justify-between items-center max-w-[120rem] mx-auto">
-                <div className="max-w-[50%] dark:text-white">
+                <div className="max-w-[50%]">
                     <h1 className="text-6xl">
                         About <span className="dark:text-[#6A1FC0]">Me</span>
                     </h1>
@@ -85,7 +85,7 @@ export default function About() {
                     Days I <span className="dark:text-[#6A1FC0]">Code</span>
                 </h1>
 
-                <div className="dark:text-white flex justify-center">
+                <div className="flex justify-center">
                     <GitHubCalendar
                         username="CerbonXD"
                         blockSize={15}

@@ -3,7 +3,7 @@ import ButtonLink from "../components/ButtonLink/ButtonLink.jsx";
 export default function Home() {
     return (
         <section className="flex flex-col justify-center gap-10 h-screen">
-            <h1 className="dark:text-white text-6xl text-center">
+            <h1 className="text-6xl text-center">
                 Hi, my name is Felipe.
                 <span className="block dark:text-[#6A1FC0] text-[3.375rem]">I’m a software engineer and a Minecraft modder.</span>
             </h1>

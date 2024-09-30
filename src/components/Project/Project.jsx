@@ -8,7 +8,7 @@ export default function Project({ title, description, link, badges, img }) {
     return (
         <div className="w-[15.625rem] bg-white/[.04] rounded-lg shadow-lg">
             <img className="w-full h-[9.375rem] object-cover rounded-t-lg" src={img} alt={alt} />
-            <div className="flex flex-col justify-between h-[12.5rem] p-3 text-white">
+            <div className="flex flex-col justify-between h-[12.5rem] p-3">
                 <div>
                     <h2>{title}</h2>
                     <p className="text-[#718096] text-[0.813rem] h-[3.75rem] mt-1 line-clamp-3 overflow-hidden overflow-ellipsis">

@@ -85,7 +85,7 @@ export default function Projects() {
                     transition={{ delay: 0.15 }}>
                     <div className="flex justify-center mt-[4.375rem]">
                         <button
-                            className="px-5 py-2 rounded-lg bg-white/[.04] dark:text-white hover:brightness-90"
+                            className="px-5 py-2 rounded-lg bg-white/[.04] hover:brightness-90"
                             onClick={handleShowMore}>
                             Show More
                         </button>
