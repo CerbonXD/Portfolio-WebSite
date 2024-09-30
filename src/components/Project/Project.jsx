@@ -17,7 +17,7 @@ export default function Project({ title, description, link, badges, img }) {
                 </div>
 
                 <div>
-                    <Link className="py-2 px-4 bg-white/[.04] rounded-lg dark:text-[#6A1FC0] hover:brightness-90" to={link}>
+                    <Link className="py-2 px-4 bg-white/[.04] rounded-lg dark:text-[#6A1FC0] hover:brightness-90 transition" to={link}>
                         Link
                     </Link>
                 </div>
