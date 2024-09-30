@@ -6,5 +6,9 @@
   "nav.resume": "Currículo",
   "nav.contact": "Contato",
   "nav.language.aria_label": "Mudar linguagem",
-  "nav.theme.aria_label": "Mudar tema"
+  "nav.theme.aria_label": "Mudar tema",
+
+  "home.greeting": "Olá, meu nome é Felipe.",
+  "home.description": "Eu sou um engenheiro de software e um modder de Minecraft.",
+  "home.invite": "Vamos construir algo incrível juntos!"
 }

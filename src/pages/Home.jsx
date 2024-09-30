@@ -1,13 +1,16 @@
 import ButtonLink from "../components/ButtonLink/ButtonLink.jsx";
+import {useTranslation} from "react-i18next";
 
 export default function Home() {
+    const [t, i18n] = useTranslation();
+
     return (
         <section className="flex flex-col justify-center gap-10 h-screen">
             <h1 className="text-6xl text-center">
-                Hi, my name is Felipe.
-                <span className="block dark:text-[#6A1FC0] text-[3.375rem]">I’m a software engineer and a Minecraft modder.</span>
+                {t("home.greeting")}
+                <span className="block dark:text-[#6A1FC0] text-[3.375rem]">{t("home.description")}</span>
             </h1>
-            <p className="text-2xl text-[#718096] text-center">Let’s build something awesome together!</p>
+            <p className="text-2xl text-[#718096] text-center">{t("home.invite")}</p>
             <div className="flex gap-5 justify-center">
                 <ButtonLink label="Linkedin" to="https://www.linkedin.com/in/felipe-cerboncini-cordeiro"></ButtonLink>
                 <ButtonLink label="Discord" to="https://discord.gg/zSbSPpunyJ"></ButtonLink>
