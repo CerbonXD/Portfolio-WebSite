@@ -4,5 +4,7 @@
   "nav.experience": "Experience",
   "nav.projects": "Projects",
   "nav.resume": "Resume",
-  "nav.contact": "Contact"
+  "nav.contact": "Contact",
+  "nav.language.aria_label": "Toggle language",
+  "nav.theme.aria_label": "Toggle theme"
 }
