@@ -1,10 +1,13 @@
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
+    const [t] = useTranslation();
+
     return (
         <footer className="min-h-[3.75rem] px-20 dark:bg-[#171923]">
             <div className="flex justify-between items-center h-full max-w-[120rem] mx-auto">
-                <p>Designed and Developed by Felipe Cerboncini</p>
+                <p>{t("footer.development_info")}</p>
                 <p>Copyright © 2024 FC</p>
 
                 <div className="flex justify-end items-center gap-5 pr-4 w-[18.648rem]">

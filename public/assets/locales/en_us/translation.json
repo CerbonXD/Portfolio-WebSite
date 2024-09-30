@@ -10,5 +10,7 @@
 
   "home.greeting": "Hi, my name is Felipe.",
   "home.description": "I’m a software engineer and a Minecraft modder.",
-  "home.invite": "Let’s build something awesome together!"
+  "home.invite": "Let’s build something awesome together!",
+
+  "footer.development_info": "Designed and Developed by Felipe Cerboncini"
 }
