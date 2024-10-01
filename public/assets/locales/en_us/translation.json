@@ -28,6 +28,7 @@
   "projects.filter.all": "All",
   "projects.filter.sites": "Sites",
   "projects.filter.mods": "Minecraft Mods",
+  "projects.show_more.button": "Show More",
 
   "footer.development_info": "Designed and Developed by Felipe Cerboncini"
 }
