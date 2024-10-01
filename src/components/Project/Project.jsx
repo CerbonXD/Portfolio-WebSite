@@ -6,7 +6,7 @@ export default function Project({ title, description, link, badges, img }) {
     const alt = `${title} project logo`;
 
     return (
-        <div className="w-[15.625rem] bg-white/[.04] rounded-lg shadow-lg">
+        <div className="w-[15.625rem] bg-black/[.04] dark:bg-white/[.04] rounded-lg shadow-lg">
             <img className="w-full h-[9.375rem] object-cover rounded-t-lg" src={img} alt={alt} />
             <div className="flex flex-col justify-between h-[12.5rem] p-3">
                 <div>
@@ -17,7 +17,7 @@ export default function Project({ title, description, link, badges, img }) {
                 </div>
 
                 <div>
-                    <Link className="py-2 px-4 bg-white/[.04] rounded-lg dark:text-[#6A1FC0] hover:brightness-90 transition" to={link}>
+                    <Link className="py-2 px-4 bg-black/[.04] dark:bg-white/[.04] rounded-lg text-[#6A1FC0] hover:opacity-90 dark:hover:brightness-90 transition" to={link}>
                         Link
                     </Link>
                 </div>

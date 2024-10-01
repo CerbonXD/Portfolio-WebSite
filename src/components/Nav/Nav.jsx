@@ -7,19 +7,19 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 export default function Nav() {
     const [t] = useTranslation()
 
-    const navLinkCss = "dark:underline-center-animation-dark py-[0.188rem]"
+    const navLinkCss = "underline-center-animation-light dark:underline-center-animation-dark"
 
     return (
         <div className="flex justify-between items-center h-full max-w-[120rem] mx-auto px-20">
             <Logo/>
             <nav>
                 <ul className="flex justify-center gap-7">
-                    <li><NavLink className={navLinkCss} to="/">{t("nav.home")}</NavLink></li>
-                    <li><NavLink className={navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
-                    <li><NavLink className={navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
-                    <li><NavLink className={navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
-                    <li><NavLink className={navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
-                    <li><NavLink className={navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
+                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
                 </ul>
             </nav>
             <LanguageAndThemeButtons/>
@@ -41,7 +41,7 @@ function LanguageAndThemeButtons() {
     return (
         <>
             <div className="flex flex-grow justify-end items-center basis-0 gap-2">
-                <button className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-white/[.06] transition" onClick={() => document.getElementById("language_modal").showModal()}>
+                <button className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] transition" onClick={() => document.getElementById("language_modal").showModal()}>
                     <svg
                         className="h-5 w-5 fill-current"
                         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ function LanguageAndThemeButtons() {
                     </svg>
                 </button>
 
-                <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-white/[.06] transition">
+                <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] transition">
                     {/* this hidden checkbox controls the state */}
                     <input type="checkbox"/>
 
@@ -76,7 +76,7 @@ function LanguageAndThemeButtons() {
                 </label>
             </div>
             <dialog id="language_modal" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box dark:bg-[#1A202C] px-0">
+                <div className="modal-box bg-[#f5f5f5] dark:bg-[#1A202C] px-0">
                     <form method="dialog">
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         <h3 className="font-bold text-xl pl-5 pb-4">{t("nav.language.modal.select_language")}</h3>
@@ -95,10 +95,10 @@ function LanguageModalButton({language, language_code, country}) {
     const [t, i18n] = useTranslation()
 
     return (
-        <button className="flex justify-between items-center w-full border-b border-b-white/[.08] text-start py-3 px-5 hover:bg-white/[0.01] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code)}>
+        <button className="flex justify-between items-center w-full border-b border-b-black/[.08] dark:border-b-white/[.08] text-start py-3 px-5 hover:bg-black/[0.04] dark:hover:bg-white/[0.04] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code)}>
             <div>
                 <p>{language}</p>
-                <p className="dark:text-[#718096]">{country}</p>
+                <p className="text-[#718096]">{country}</p>
             </div>
             <span className={"fi fis " + "fi-" + language_code.substring(3)}></span> {/* Flag */}
         </button>

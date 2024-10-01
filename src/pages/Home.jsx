@@ -8,7 +8,7 @@ export default function Home() {
         <section className="flex flex-col justify-center gap-10 h-screen">
             <h1 className="text-6xl text-center">
                 {t("home.greeting")}
-                <span className="block dark:text-[#6A1FC0] text-[3.375rem]">{t("home.description")}</span>
+                <span className="block text-[#6A1FC0] text-[3.375rem]">{t("home.description")}</span>
             </h1>
             <p className="text-2xl text-[#718096] text-center">{t("home.invite")}</p>
             <div className="flex gap-5 justify-center">

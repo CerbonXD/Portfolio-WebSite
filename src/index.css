@@ -13,10 +13,6 @@
     font-style: normal;
 }
 
-.active {
-    border-bottom: 1px solid white;
-}
-
 @layer components {
     .underline-center-animation-dark::after {
         content: '';
@@ -28,6 +24,19 @@
     }
 
     .underline-center-animation-dark:hover::after {
+        transform: scaleX(1);
+    }
+
+    .underline-center-animation-light::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid black;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 250ms ease-in-out;
+    }
+
+    .underline-center-animation-light:hover::after {
         transform: scaleX(1);
     }
 }
