@@ -11,7 +11,7 @@ export default function Project({ title, description, link, badges, img }) {
             <div className="flex flex-col justify-between h-[12.5rem] p-3">
                 <div>
                     <h2>{title}</h2>
-                    <p className="text-[#718096] text-[0.813rem] h-[3.75rem] mt-1 line-clamp-3 overflow-hidden overflow-ellipsis">
+                    <p className="text-black/[.65] dark:text-[#718096] text-[0.813rem] h-[3.75rem] mt-1 line-clamp-3 overflow-hidden overflow-ellipsis">
                         {description}
                     </p>
                 </div>

@@ -52,7 +52,7 @@ function AboutMeSection() {
                 <h1 className="text-6xl">
                     {t("about.heading")} <span className={coloredTextCss}>{t("about.me.heading")}</span>
                 </h1>
-                <div className="mt-7 text-[1.313rem] leading-[1.875rem] text-[#718096]">
+                <div className="mt-7 text-[1.313rem] leading-[1.875rem] text-black/[.65] dark:text-[#718096]">
                     <p>{t("about.first_paragraph")}</p>
                     <br/>
                     <p>{t("about.second_paragraph")}</p>
