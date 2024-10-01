@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import {useTranslation} from "react-i18next";
 
 export default function Projects() {
+    const [t] = useTranslation();
     const [data, setData] = useState([]);
-    const [filter, setFilter] = useState('All');
+    const [filter, setFilter] = useState(t("projects.filter.all"));
     const [visibleProjects, setVisibleProjects] = useState(8);
     const [completedAnimations, setCompletedAnimations] = useState(0); // Track animation completion
-    const [t] = useTranslation();
 
     useEffect(() => {
         fetch('/projects.json')
