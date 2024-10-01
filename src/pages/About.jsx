@@ -1,5 +1,6 @@
 import SkillCard from "../components/SkillCard/SkillCard.jsx";
 import GitHubCalendar from "react-github-calendar";
+import {useTranslation} from "react-i18next";
 
 const svgSize = "90"
 const h1CenterCss = "text-6xl text-center my-[4.375rem]"
@@ -43,20 +44,22 @@ export default function About() {
 }
 
 function AboutMeSection() {
+    const [t] = useTranslation();
+
     return (
         <section className="flex justify-between items-center max-w-[120rem] mx-auto">
             <div className="max-w-[50%]">
                 <h1 className="text-6xl">
-                    About <span className={coloredTextCss}>Me</span>
+                    {t("about.heading")} <span className={coloredTextCss}>{t("about.me.heading")}</span>
                 </h1>
                 <div className="mt-7 text-[1.313rem] leading-[1.875rem] dark:text-[#718096]">
-                    <p>Hi! I'm Felipe Cerboncini Cordeiro, a first-year Software Engineering student at FIAP, focusing on full-stack development. My journey into programming began with a fascination for creating things that work and solve real problems. Even though I’m just starting my formal education, I’ve already found a deep passion for coding—particularly in Java, my main language.</p>
+                    <p>{t("about.first_paragraph")}</p>
                     <br/>
-                    <p>Outside of college, I spend much of my time working on personal projects and honing my skills as a freelance developer. One of my proudest accomplishments is creating Minecraft mods. Over the years, I’ve developed and shared mods with the Minecraft community, and my work has reached over 7.8 million downloads on CurseForge. The experience of seeing people enjoy and use what I build is incredibly rewarding.</p>
+                    <p>{t("about.second_paragraph")}</p>
                     <br/>
-                    <p>Though I haven’t worked in a company yet, I’m always learning and challenging myself with new technologies and projects. I love the process of writing code, debugging, and watching an idea come to life. Every line of code is an opportunity to grow and improve, and I’m excited to see where this journey takes me.</p>
+                    <p>{t("about.third_paragraph")}</p>
                     <br/>
-                    <p>If you’re interested in collaborating on a project, learning more about my mods, or just chatting about development, feel free to reach out. I’m always up for a new challenge!</p>
+                    <p>{t("about.fourth_paragraph")}</p>
                 </div>
             </div>
             <img className="w-[800px]" src="/public/dev_coding.svg" alt="Dev coding vector image"></img>
@@ -65,10 +68,12 @@ function AboutMeSection() {
 }
 
 function SkillsSection() {
+    const [t] = useTranslation();
+
     return (
         <section>
             <h1 className={h1CenterCss}>
-                Professional <span className={coloredTextCss}>Skillset</span>
+                {t("about.professional.heading")} <span className={coloredTextCss}>{t("about.professional.skillset.heading")}</span>
             </h1>
 
             <div className={skillsCss}>
@@ -81,10 +86,12 @@ function SkillsSection() {
 }
 
 function ToolsSection() {
+    const [t] = useTranslation();
+
     return (
         <section>
             <h1 className={h1CenterCss}>
-                Tools I <span className={coloredTextCss}>use</span>
+                {t("about.tools.heading")} <span className={coloredTextCss}>{t("about.tools.use.heading")}</span>
             </h1>
 
             <div className={skillsCss}>
@@ -97,10 +104,12 @@ function ToolsSection() {
 }
 
 function GithubCalendarSection() {
+    const [t] = useTranslation();
+
     return (
         <section>
             <h1 className={h1CenterCss}>
-                Days I <span className={coloredTextCss}>Code</span>
+                {t("about.days.heading")} <span className={coloredTextCss}>{t("about.days.code.heading")}</span>
             </h1>
 
             <div className="flex justify-center">
