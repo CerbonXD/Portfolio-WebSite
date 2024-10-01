@@ -2,6 +2,8 @@ import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 export default function Nav() {
     const [t] = useTranslation()
 
@@ -75,11 +77,12 @@ function LanguageModalButton({language, language_code, country}) {
     const [t, i18n] = useTranslation()
 
     return (
-        <button className="w-full border-b border-b-white/[.08] text-start" onClick={() => i18n.changeLanguage(language_code)}>
-            <div className="py-3 hover:bg-white/[0.01] active:scale-x-[.99] transition">
+        <button className="flex justify-between items-center w-full border-b border-b-white/[.08] text-start py-3 px-3 hover:bg-white/[0.01] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code)}>
+            <div>
                 <p>{language}</p>
                 <p className="dark:text-[#718096]">{country}</p>
             </div>
+            <span className={"fi fis " + "fi-" + language_code.substring(3)}></span> {/* Flag */}
         </button>
     )
 }
