@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function SkillCard({ skillName, svg }) {
     return (
-        <div className="group p-10 dark:bg-white/[.04] rounded-lg relative transform transition-transform hover:scale-125 shadow-lg">
+        <div className="group p-10 bg-black/[.04] dark:bg-white/[.04] rounded-lg relative transform transition-transform hover:scale-125 shadow-lg">
             <div className="group-hover:translate-y-[-10px] transition-transform duration-150" aria-hidden="true">
                 <div className="w-[5.625rem] h-[5.625rem]">
                     {svg}
