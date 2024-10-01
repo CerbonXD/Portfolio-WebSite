@@ -25,5 +25,9 @@
   "about.days.heading": "Dias Que",
   "about.days.code.heading": "Programo",
 
+  "projects.filter.all": "Todos",
+  "projects.filter.sites": "Sites",
+  "projects.filter.mods": "Minecraft Mods",
+
   "footer.development_info": "Projetado e Desenvolvido por Felipe Cerboncini."
 }

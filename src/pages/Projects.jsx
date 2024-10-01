@@ -2,12 +2,14 @@ import Project from "../components/Project/Project.jsx";
 import { useEffect, useState, useMemo } from "react";
 import FilterButton from "../components/FilterButton/FilterButton.jsx";
 import { motion } from 'framer-motion';
+import {useTranslation} from "react-i18next";
 
 export default function Projects() {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState('All');
     const [visibleProjects, setVisibleProjects] = useState(8);
     const [completedAnimations, setCompletedAnimations] = useState(0); // Track animation completion
+    const [t] = useTranslation();
 
     useEffect(() => {
         fetch('/projects.json')
@@ -17,13 +19,13 @@ export default function Projects() {
     }, []);
 
     // Memoize filtered projects to avoid unnecessary recalculations
-    const filters = ["All", "Sites", "Minecraft Mods"];
+    const filters = [t("projects.filter.all"), t("projects.filter.sites"), t("projects.filter.mods")];
     const filteredProjects = useMemo(() => {
         return data.filter(project => {
             switch (filter) {
-                case "All": return true;
-                case "Sites": return project.badges?.some(badge => badge?.label?.toUpperCase() === 'REACT');
-                case "Minecraft Mods": return project.badges?.some(badge => badge?.label?.toUpperCase() === 'MOD');
+                case t("projects.filter.all"): return true;
+                case t("projects.filter.sites"): return project.badges?.some(badge => badge?.label?.toUpperCase() === 'REACT');
+                case t("projects.filter.mods"): return project.badges?.some(badge => badge?.label?.toUpperCase() === 'MOD');
                 default: return false;
             }
         });
