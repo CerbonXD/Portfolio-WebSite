@@ -7,6 +7,7 @@
   "nav.contact": "Contato",
   "nav.language.aria_label": "Mudar linguagem",
   "nav.theme.aria_label": "Mudar tema",
+  "nav.language.modal.select_language": "Selecione Idioma",
 
   "home.greeting": "Olá, meu nome é Felipe.",
   "home.description": "Eu sou um engenheiro de software e um modder de Minecraft.",

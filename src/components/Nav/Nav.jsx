@@ -59,7 +59,7 @@ function LanguageAndThemeButtons() {
                 <div className="modal-box dark:bg-[#1A202C]">
                     <form method="dialog">
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                        <h3 className="font-bold text-xl">Select Language</h3>
+                        <h3 className="font-bold text-xl">{t("nav.language.modal.select_language")}</h3>
                         <div className="flex flex-col py-4">
                             <LanguageModalButton language="English" language_code="en_us" country="United States"/>
                             <LanguageModalButton language="Português" language_code="pt_br" country="Brasil"/>
