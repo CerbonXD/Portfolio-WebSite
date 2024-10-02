@@ -86,12 +86,12 @@ function LanguageAndThemeButtons() {
                 <div className="modal-box bg-white dark:bg-[#1A202C] px-0">
                     <form method="dialog">
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                        <h3 className="font-bold text-xl pl-5 pb-4">{t("nav.language.modal.select_language")}</h3>
-                        <div className="flex flex-col">
-                            <LanguageModalButton language="English" language_code="en_us" country="United States"/>
-                            <LanguageModalButton language="Português" language_code="pt_br" country="Brasil"/>
-                        </div>
                     </form>
+                    <h3 className="font-bold text-xl pl-5 pb-4">{t("nav.language.modal.select_language")}</h3>
+                    <div className="flex flex-col">
+                        <LanguageModalButton language="English" language_code="en_us" country="United States"/>
+                        <LanguageModalButton language="Português" language_code="pt_br" country="Brasil"/>
+                    </div>
                 </div>
             </dialog>
         </>
@@ -102,7 +102,7 @@ function LanguageModalButton({language, language_code, country}) {
     const [t, i18n] = useTranslation()
 
     return (
-        <button className="flex justify-between items-center w-full border-b border-b-black/[.08] dark:border-b-white/[.08] text-start py-3 px-5 hover:bg-black/[0.04] dark:hover:bg-white/[0.04] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code)}>
+        <button className="flex justify-between items-center w-full border-b border-b-black/[.08] dark:border-b-white/[.08] text-start py-3 px-5 hover:bg-black/[0.04] dark:hover:bg-white/[0.04] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code, () => window.location.reload())}>
             <div>
                 <p>{language}</p>
                 <p className="text-black/[.65] dark:text-[#718096]">{country}</p>
