@@ -12,7 +12,7 @@ export default function App() {
     return (
         <div className="flex flex-col h-screen text-[#0f0f0f] dark:text-white">
             <Header/>
-            <main className="grow bg-[#f5f5f5] dark:bg-[#1A202C]">
+            <main className="grow bg-[#ffffff] dark:bg-[#1A202C]">
                 <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{opacity: 0}} transition={{ delay: 0.10 }}>
                     <Outlet/>
                 </motion.div>

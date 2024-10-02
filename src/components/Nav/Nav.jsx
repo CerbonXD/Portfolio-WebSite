@@ -83,7 +83,7 @@ function LanguageAndThemeButtons() {
                 </label>
             </div>
             <dialog id="language_modal" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box bg-[#f5f5f5] dark:bg-[#1A202C] px-0">
+                <div className="modal-box bg-white dark:bg-[#1A202C] px-0">
                     <form method="dialog">
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         <h3 className="font-bold text-xl pl-5 pb-4">{t("nav.language.modal.select_language")}</h3>
