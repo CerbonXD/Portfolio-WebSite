@@ -48,7 +48,7 @@ function LanguageAndThemeButtons() {
     return (
         <>
             <div className="flex flex-grow justify-end items-center basis-0 gap-2">
-                <button className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] transition" onClick={() => document.getElementById("language_modal").showModal()}>
+                <button className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] active:scale-90 transition" onClick={() => document.getElementById("language_modal").showModal()}>
                     <svg
                         className="h-5 w-5 fill-current"
                         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ function LanguageAndThemeButtons() {
                     </svg>
                 </button>
 
-                <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] transition">
+                <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] active:scale-90 transition">
                     {/* this hidden checkbox controls the state */}
                     <input type="checkbox" onClick={darkModeHandler}/>
 
