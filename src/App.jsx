@@ -4,6 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 import './i18n'
+import { useEffect } from "react";
 
 export default function App() {
     const location = useLocation();

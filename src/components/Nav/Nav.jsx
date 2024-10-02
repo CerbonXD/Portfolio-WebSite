@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import PropTypes from "prop-types";
 
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+import { useState } from "react";
 
 export default function Nav() {
     const [t] = useTranslation()
@@ -37,6 +38,12 @@ function Logo() {
 
 function LanguageAndThemeButtons() {
     const [t] = useTranslation()
+    const [dark, setDark] = useState(true)
+
+    const darkModeHandler = () => {
+        setDark(!dark)
+        document.body.classList.toggle("dark")
+    }
 
     return (
         <>
@@ -53,7 +60,7 @@ function LanguageAndThemeButtons() {
 
                 <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] transition">
                     {/* this hidden checkbox controls the state */}
-                    <input type="checkbox"/>
+                    <input type="checkbox" onClick={darkModeHandler}/>
 
                     {/* moon icon */}
                     <svg
