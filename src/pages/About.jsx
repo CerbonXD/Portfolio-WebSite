@@ -34,7 +34,7 @@ const tools = [
 
 export default function About() {
     return (
-        <div className="px-20 my-[4.375rem]">
+        <div className="px-20 mb-[4.375rem] max-w-[120rem] mx-auto">
             <AboutMeSection/>
             <SkillsSection/>
             <ToolsSection/>
@@ -47,12 +47,12 @@ function AboutMeSection() {
     const [t] = useTranslation();
 
     return (
-        <section className="flex justify-between items-center max-w-[120rem] mx-auto">
-            <div className="max-w-[50%]">
-                <h1 className="text-6xl">
+        <section className="flex justify-center items-center">
+            <div>
+                <h1 className={h1CenterCss}>
                     {t("about.heading")} <span className={coloredTextCss}>{t("about.me.heading")}</span>
                 </h1>
-                <div className="mt-7 text-[1.313rem] leading-[1.875rem] text-[#718096]">
+                <div className="px-3 text-[1.313rem] text-center leading-[1.875rem] text-[#718096]">
                     <p>{t("about.first_paragraph")}</p>
                     <br/>
                     <p>{t("about.second_paragraph")}</p>
@@ -62,7 +62,6 @@ function AboutMeSection() {
                     <p>{t("about.fourth_paragraph")}</p>
                 </div>
             </div>
-            <img className="w-[800px]" src="/public/dev_coding.svg" alt="Dev coding vector image"></img>
         </section>
     )
 }
