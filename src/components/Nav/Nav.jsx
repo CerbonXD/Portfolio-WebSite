@@ -105,7 +105,7 @@ function LanguageModalButton({language, language_code, country}) {
         <button className="flex justify-between items-center w-full border-b border-b-black/[.08] dark:border-b-white/[.08] text-start py-3 px-5 hover:bg-black/[0.04] dark:hover:bg-white/[0.04] active:scale-x-[.99] transition" onClick={() => i18n.changeLanguage(language_code, () => window.location.reload())}>
             <div>
                 <p>{language}</p>
-                <p className="text-black/[.65] dark:text-[#718096]">{country}</p>
+                <p className="text-[#718096]">{country}</p>
             </div>
             <span className={"fi fis " + "fi-" + language_code.substring(3)}></span> {/* Flag */}
         </button>
