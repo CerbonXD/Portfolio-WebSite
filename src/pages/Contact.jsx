@@ -1,11 +1,14 @@
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 export default function Contact() {
+    const [t] = useTranslation()
+
     return (
         <section className="flex justify-center gap-4 px-20 h-screen max-w-[120rem] mx-auto">
             <div className="flex flex-col justify-center gap-10 max-w-md w-full">
                 <div className="text-center text-4xl">
-                    <h3>Let's stay in <span className="text-[#6A1FC0]">touch!</span></h3>
+                    <h3>{t("contact.heading")} <span className="text-[#6A1FC0]">{t("contact.touch.heading")}</span></h3>
                 </div>
                 <div className="flex justify-center items-center gap-3">
                     <div className="w-full border-black/[.08] dark:border-white/[.08] border-b-2"></div>             
@@ -17,17 +20,17 @@ export default function Contact() {
                 <form className="flex flex-col justify-center gap-7">
                     <label className="input input-bordered flex items-center gap-2 focus-within:outline-[#6A1FC0] bg-black/[.04] dark:bg-white/[.04]">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-4 w-4"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
-                        <input type="text" className="grow" placeholder="Name" />
+                        <input type="text" className="grow" placeholder={t("contact.input.name.placeholder")} />
                     </label>
 
                     <label className="input input-bordered flex items-center gap-2 focus-within:outline-[#6A1FC0] bg-black/[.04] dark:bg-white/[.04] ">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="h-3 w-4"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
-                        <input type="text" className="grow" placeholder="Email" />
+                        <input type="text" className="grow" placeholder={t("contact.input.email.placeholder")} />
                     </label>
 
-                    <textarea className="textarea textarea-bordered min-h-40 focus-within:outline-[#6A1FC0] bg-black/[.04] dark:bg-white/[.04] " placeholder="Message"></textarea>
+                    <textarea className="textarea textarea-bordered min-h-40 focus-within:outline-[#6A1FC0] bg-black/[.04] dark:bg-white/[.04] " placeholder={t("contact.input.message.placeholder")}></textarea>
 
-                    <button type="submit" className="bg-[#6A1FC0] rounded-lg py-2 cursor-pointer text-white hover:brightness-90 active:scale-[.97] transition">Submit</button>
+                    <button type="submit" className="bg-[#6A1FC0] rounded-lg py-2 cursor-pointer text-white hover:brightness-90 active:scale-[.97] transition">{t("contact.form.submit.button")}</button>
                 </form>
             </div>
         </section>

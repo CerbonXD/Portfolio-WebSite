@@ -31,5 +31,12 @@
   "projects.filter.mods": "Minecraft Mods",
   "projects.show_more.button": "Ver Mais",
 
+  "contact.heading": "Vamos manter",
+  "contact.touch.heading": "contato!",
+  "contact.input.name.placeholder": "Nome",
+  "contact.input.email.placeholder": "Email",
+  "contact.input.message.placeholder": "Menssagem",
+  "contact.form.submit.button": "Enviar",
+
   "footer.development_info": "Projetado e Desenvolvido por Felipe Cerboncini."
 }
