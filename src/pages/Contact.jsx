@@ -27,6 +27,7 @@ export default function Contact() {
                 <div className="text-center text-4xl">
                     <h3>{t("contact.heading")} <span className="text-[#6A1FC0]">{t("contact.touch.heading")}</span></h3>
                 </div>
+
                 <div className="flex justify-center items-center gap-3">
                     <div className="w-full border-black/[.08] dark:border-white/[.08] border-b-2"></div>             
                     <Link to="https://www.linkedin.com/in/felipe-cerboncini-cordeiro"><svg width="24" height="24" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_49)"><path d="M4.13375 14.5H1.23125V5.15312H4.13375V14.5ZM2.68094 3.87812C1.75281 3.87812 1 3.10937 1 2.18124C1 1.73543 1.1771 1.30788 1.49234 0.99264C1.80757 0.677403 2.23513 0.500305 2.68094 0.500305C3.12675 0.500305 3.5543 0.677403 3.86954 0.99264C4.18478 1.30788 4.36188 1.73543 4.36188 2.18124C4.36188 3.10937 3.60875 3.87812 2.68094 3.87812ZM14.9969 14.5H12.1006V9.94999C12.1006 8.86562 12.0787 7.47499 10.5916 7.47499C9.0825 7.47499 8.85125 8.65312 8.85125 9.87187V14.5H5.95188V5.15312H8.73562V6.42812H8.77625C9.16375 5.69374 10.1103 4.91874 11.5225 4.91874C14.46 4.91874 15 6.85312 15 9.36562V14.5H14.9969Z" fill="currentColor"/></g><defs><clipPath id="clip0_4_49"><rect width="16" height="16" fill="white" transform="translate(0 0.5)"/></clipPath></defs></svg></Link>
@@ -34,6 +35,7 @@ export default function Contact() {
                     <Link to="mailto:felipecerboncinix@gmail.com"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="24" width="21" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></Link>
                     <div className="w-full border-black/[.08] dark:border-white/[.08] border-b-2 "></div>
                 </div>
+
                 <form className="flex flex-col justify-center gap-7" onSubmit={handleSubmit}>
                     <label className="input input-bordered flex items-center gap-2 focus-within:outline-[#6A1FC0] bg-black/[.04] dark:bg-white/[.04]">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="h-4 w-4"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
