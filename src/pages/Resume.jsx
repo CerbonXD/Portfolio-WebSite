@@ -3,7 +3,7 @@ import {useTranslation} from "react-i18next";
 export default function Resume() {
     const [t, i18n] = useTranslation();
 
-    const srcImg = i18n.language === "pt_br" ? "https://i.imgur.com/TDmAgpH.png" : "https://imgur.com/AdjJ2VI.png"
+    const srcImg = i18n.language === "pt_br" ? "https://i.imgur.com/TDmAgpH.png" : "https://imgur.com/mpfsYyP.png"
 
     return (
         <div className="flex justify-center w-full py-[4.375rem]">
