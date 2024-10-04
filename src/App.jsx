@@ -16,7 +16,10 @@ export default function App() {
                     <Outlet/>
                 </motion.div>
             </main>
-            <Footer/>
+            <div>
+                <Footer/>
+            </div>
+
         </div>
     );
 }

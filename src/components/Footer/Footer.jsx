@@ -5,9 +5,9 @@ export default function Footer() {
     const [t] = useTranslation();
 
     return (
-        <footer className="min-h-[3.75rem] px-20 bg-[#edf2f7] dark:bg-[#171923]">
-            <div className="flex justify-between items-center h-full max-w-[120rem] mx-auto">
-                <p className="flex-grow basis-0">{t("footer.development_info")}</p>
+        <footer className="min-h-[3.75rem] h-full py-5 lg:py-0 px-5 lg:px-20 bg-[#edf2f7] dark:bg-[#171923]">
+            <div className="flex flex-col justify-center gap-5 lg:flex-row lg:justify-between items-center h-full max-w-[120rem] mx-auto">
+                <p className="text-center md:text-start flex-grow basis-0">{t("footer.development_info")}</p>
                 <p>Copyright © 2024 FC</p>
 
                 <div className="flex justify-end flex-grow basis-0 items-center gap-5 pr-4">
