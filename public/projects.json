@@ -1,7 +1,7 @@
 [
   {
     "title": "CERBON's API",
-    "description": "A library mod for CERBON's Minecraft Mods. (My mods)",
+    "description": "projects.cerbons_api.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/cerbons-api",
     "image": "https://media.forgecdn.net/avatars/thumbnails/925/652/256/256/638394541002989914.jpeg",
     "badges": [
@@ -13,7 +13,7 @@
   },
   {
     "title": "Bosses of Mass Destruction",
-    "description": "A Minecraft mod that add new Bosses to the game.",
+    "description": "projects.bomd.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
     "image": "https://media.forgecdn.net/avatars/thumbnails/909/606/256/256/638362844738980011.png",
     "badges": [
@@ -25,7 +25,7 @@
   },
   {
     "title": "Queen Bee",
-    "description": "Adds Queen Bee to Minecraft, with new items and a new Structure.",
+    "description": "projects.queen_bee.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/queen-bee",
     "image": "https://media.forgecdn.net/avatars/thumbnails/796/322/256/256/638156323381933157.png",
     "badges": [
@@ -37,7 +37,7 @@
   },
   {
     "title": "Better Beacons",
-    "description": "New UI, new features, new effects and new advancements. Improves Minecraft's beacon.",
+    "description": "projects.better_beacons.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/cerbons-better-beacons",
     "image": "https://media.forgecdn.net/avatars/thumbnails/887/38/256/256/638323899873399879.png",
     "badges": [
@@ -49,7 +49,7 @@
   },
   {
     "title": "Just Enough Beacons Reforged",
-    "description": "JEI addon to display useful information about beacons.",
+    "description": "projects.jeb.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/just-enough-beacons-reforged",
     "image": "https://media.forgecdn.net/avatars/thumbnails/876/576/256/256/638300512066520740.png",
     "badges": [
@@ -61,7 +61,7 @@
   },
   {
     "title": "Better Totem of Undying",
-    "description": "An improved version of Minecraft's Totem of Undying, offering new functionalities and extensive customization options for Modpack developers.",
+    "description": "projects.btu.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/better-totem-of-undying",
     "image": "https://media.forgecdn.net/avatars/thumbnails/873/85/256/256/638292747176714352.png",
     "badges": [
@@ -73,7 +73,7 @@
   },
   {
     "title": "Talk Balloons",
-    "description": "Add bubbles above player heads when they send a message in the chat.",
+    "description": "projects.talk_balloons.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/talk-balloons",
     "image": "https://media.forgecdn.net/avatars/thumbnails/969/395/256/256/638470181651884823.png",
     "badges": [
@@ -85,7 +85,7 @@
   },
   {
     "title": "Sugared Concrete Powder",
-    "description": "Combine sugar with concrete powder and prevent it from harden when touching water.",
+    "description": "projects.sugared_concrete_powder.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/sugared-concrete-powder",
     "image": "https://media.forgecdn.net/avatars/thumbnails/929/362/256/256/638401520636406303.png",
     "badges": [
@@ -97,7 +97,7 @@
   },
   {
     "title": "Keep Stepping",
-    "description": "Toggle between Step Up blocks smoothly, Auto Jump or disable both.",
+    "description": "projects.keep_stepping.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/keep-stepping",
     "image": "https://media.forgecdn.net/avatars/thumbnails/966/200/256/256/638465438595625307.jpeg",
     "badges": [
@@ -109,7 +109,7 @@
   },
   {
     "title": "Beautiful Enchanted Books",
-    "description": "Each enchanted book will now have a different texture.",
+    "description": "projects.beautiful_enchanted_books.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/beautiful-enchanted-books",
     "image": "https://media.forgecdn.net/avatars/thumbnails/1059/990/256/256/638591533953639737.webp",
     "badges": [
@@ -125,7 +125,7 @@
   },
   {
     "title": "Epic Paragliders [FORK]",
-    "description": "Epic Paragliders Fork fixing compatibility with Epic Fight and Paraglider mods.",
+    "description": "projects.epic_paragliders.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/epic-paragliders-fork",
     "image": "https://media.forgecdn.net/avatars/thumbnails/1011/580/256/256/638535637557301982.jpeg",
     "badges": [
@@ -141,7 +141,7 @@
   },
   {
     "title": "Area Event",
-    "description": "Allows you to create custom area events in Minecraft such as boss area Events with custom damage tracking.",
+    "description": "projects.area_event.description",
     "link": "",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [
@@ -157,7 +157,7 @@
   },
   {
     "title": "Mob Spawn Control",
-    "description": "Adds an invisible block similar to a spawner that you can configure.",
+    "description": "projects.mob_spawn_control.description",
     "link": "",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [
@@ -173,7 +173,7 @@
   },
   {
     "title": "Banner Claim",
-    "description": "Add tiered banners to Minecraft that lets you claim area.",
+    "description": "projects.banner_claim.description",
     "link": "https://github.com/CERBON-s-Comissions/Banner-Claim",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [
@@ -189,7 +189,7 @@
   },
   {
     "title": "Electrum Gear",
-    "description": "Adds eletric armor to Minecraft with custom sound and functionality.",
+    "description": "projects.electrum_gear.description",
     "link": "https://github.com/CERBON-s-Comissions/Electrum-Gear",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [
@@ -205,7 +205,7 @@
   },
   {
     "title": "Daylight Zombies",
-    "description": "Allow zombies to spawn during daytime.",
+    "description": "projects.daylight_zombies.description",
     "link": "https://github.com/CERBON-s-Comissions/Daylight-Zombies",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2CBsJiKKFxnVZkFiYIxYaIRemgHnUN8L8g&s.png",
     "badges": [
@@ -221,7 +221,7 @@
   },
   {
     "title": "Ninja's Cash",
-    "description": "I created the algorithm used to add all possible crafting recipes for each currency.",
+    "description": "projects.ninjas_cash.description",
     "link": "https://www.curseforge.com/minecraft/mc-mods/ninjas-cash",
     "image": "https://media.forgecdn.net/avatars/thumbnails/14/628/256/256/635601139143682727.jpeg",
     "badges": [
@@ -237,7 +237,7 @@
   },
   {
     "title": "Japanese Emoji Commands",
-    "description": "Kaomoji in Minecraft via commands. I updated the mod to 1.20.X.",
+    "description": "projects.japanese_emoji_commands.description",
     "link": "https://github.com/CERBON-s-Comissions/japanese-emoji-commands",
     "image": "https://media.forgecdn.net/avatars/thumbnails/352/134/256/256/637507325472965417.png",
     "badges": [
@@ -253,7 +253,7 @@
   },
   {
     "title": "Road Stuff",
-    "description": "Adds road related blocks. I updated the mod to 1.20.1.",
+    "description": "projects.road_stuff.description",
     "link": "https://github.com/CERBON-s-Comissions/roadstuff",
     "image": "https://media.forgecdn.net/avatars/thumbnails/340/934/256/256/637483294899272686.png",
     "badges": [
@@ -269,7 +269,7 @@
   },
   {
     "title": "Mapper Base",
-    "description": "Base mod for Mapper's mods. I updated the mod to 1.20.1.",
+    "description": "projects.mapper_base.description",
     "link": "https://github.com/CERBON-s-Comissions/mapperbase",
     "image": "https://media.forgecdn.net/avatars/thumbnails/254/499/256/256/637198787927132045.png",
     "badges": [
@@ -285,7 +285,7 @@
   },
   {
     "title": "Betonquest GUI",
-    "description": "A 1.20.4 port for betonquest gui. This is the client / Forge side.",
+    "description": "projects.betonquest_gui.description",
     "link": "https://github.com/CERBON-s-Comissions/betonquest-gui",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [
@@ -301,7 +301,7 @@
   },
   {
     "title": "Betonquest GUI Plugin",
-    "description": "A 1.20.4 port for betonquest gui. This is plugin side.",
+    "description": "projects.betonquest_gui_plugin.description",
     "link": "https://github.com/CERBON-s-Comissions/betonquest-gui-plugin",
     "image": "https://static.wikia.nocookie.net/minecraft/images/8/8f/WhiteWallBanner.png/revision/latest?cb=20191005225116",
     "badges": [

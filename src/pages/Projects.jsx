@@ -69,7 +69,7 @@ export default function Projects() {
                         }}>
                         <Project
                             title={project.title}
-                            description={project.description}
+                            description={t(project.description)}
                             link={project.link}
                             img={project.image}
                             badges={project.badges}
