@@ -6,9 +6,9 @@ export default function Home() {
 
     return (
         <section className="flex flex-col justify-center gap-10 h-screen">
-            <h1 className="text-6xl text-center">
+            <h1 className="text-5xl sm:text-6xl text-center">
                 {t("home.greeting")}
-                <span className="block text-[#6A1FC0] text-[3.375rem]">{t("home.description")}</span>
+                <span className="block text-[#6A1FC0] text-[2.625rem] sm:text-[3.375rem] leading-none">{t("home.description")}</span>
             </h1>
             <p className="text-2xl text-[#718096] text-center">{t("home.invite")}</p>
             <div className="flex flex-wrap gap-5 justify-center">
