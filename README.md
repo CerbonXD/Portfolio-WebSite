@@ -1,8 +1,19 @@
-# React + Vite
+# Portfolio Felipe Cerboncini | React + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Home Image](https://i.imgur.com/ObsveNK.jpeg)
 
-Currently, two official plugins are available:
+## General
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website showcases my projects and helps others connect with me. It was also created as part of a checkpoint assignment at [FIAP](https://www.fiap.com.br/). The website supports both English and Portuguese languages, as well as light and dark mode color schemes for a personalized browsing experience.
+
+## Technologies Used
+
+- React + Vite
+- Tailwind
+- React Router Dom
+- DaisyUI
+- Framer Motion
+- React GitHub Calendar
+- Flag Icons
+- I18next
+- Prop Types
