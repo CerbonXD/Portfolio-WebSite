@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 import {useTranslation} from "react-i18next";
 
 const svgSize = "90"
-const h1CenterCss = "text-4xl sm:text-6xl text-center my-[4.375rem]"
+const h1CenterCss = "text-5xl sm:text-6xl text-center my-[4.375rem]"
 const skillsCss = "flex justify-center flex-wrap gap-[3.125rem] max-w-6xl mx-auto"
 const coloredTextCss = "text-[#6A1FC0]"
 
