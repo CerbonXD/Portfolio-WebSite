@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {AnimatePresence, motion} from "framer-motion";
 import PropTypes from "prop-types";
 
 import "/node_modules/flag-icons/css/flag-icons.min.css";
@@ -12,6 +13,27 @@ export default function Nav() {
     const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle menu function
 
     const navLinkCss = "underline-center-animation-light dark:underline-center-animation-dark";
+
+    const navVariants = {
+        hidden: { height: 0},
+        visible: { height: "100%", transition: { duration: 0.4, ease: "easeInOut" } },
+        exit: { height: 0, transition: { duration: 0.4, ease: "easeInOut" } }
+    };
+
+    const navItemVariants = {
+        hidden: { opacity: 0},
+        visible: { opacity: 1, transition: { duration: 0.3, ease: "easeInOut" } },
+        exit: { opacity: 0, transition: { duration: 0.3, ease: "easeInOut" } }
+    };
+
+    const ulVariants = {
+        hidden: {}, // Parent has no animation, but controls children
+        visible: {
+            transition: {
+                staggerChildren: 0.2, // Stagger each child by 0.2 seconds
+            },
+        },
+    };
 
     return (
         <div className="h-full px-5 lg:px-20">
@@ -29,12 +51,12 @@ export default function Nav() {
                 </nav>
                 <LanguageAndThemeButtons/>
 
-                <div className="md:hidden ml-5">
+                <div className="md:hidden ml-1">
                     {/* Hamburger icon for small screens */}
-                    <div onClick={toggleMenu}>
+                    <div className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] active:scale-90 transition" onClick={toggleMenu}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 cursor-pointer transform -scale-x-100"
+                            className="h-6 w-6 cursor-pointer transform -scale-x-100 "
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -48,19 +70,27 @@ export default function Nav() {
                     </div>
 
                     {/* Mobile Navigation - Shows when menu is open */}
-                    {menuOpen && (
-                        <nav className="md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50">
-                            <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-10" onClick={toggleMenu}>✕</button>
-                            <ul className="flex flex-col items-center gap-8">
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></li>
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
-                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
-                            </ul>
-                        </nav>
-                    )}
+                    <AnimatePresence>
+                        {menuOpen && (
+                            <motion.nav
+                                className="md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50"
+                                variants={navVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-10" onClick={toggleMenu}>✕</button>
+                                <motion.ul className="flex flex-col items-center gap-8" variants={ulVariants}>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></motion.li>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></motion.li>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></motion.li>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></motion.li>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></motion.li>
+                                    <motion.li variants={navItemVariants} onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></motion.li>
+                                </motion.ul>
+                            </motion.nav>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </div>
@@ -97,7 +127,7 @@ function LanguageAndThemeButtons() {
                 </button>
 
                 <label className="swap swap-rotate px-3 py-2 rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] active:scale-90 transition">
-                    {/* this hidden checkbox controls the state */}
+                {/* this hidden checkbox controls the state */}
                     <input type="checkbox" onClick={darkModeHandler}/>
 
                     {/* moon icon */}
