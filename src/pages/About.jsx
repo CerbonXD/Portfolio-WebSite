@@ -52,7 +52,7 @@ function AboutMeSection() {
                 <h1 className={h1CenterCss}>
                     {t("about.heading")} <span className={coloredTextCss}>{t("about.me.heading")}</span>
                 </h1>
-                <div className="pr-3 text-[1.313rem] text-center leading-[1.875rem] text-[#718096]">
+                <div className="text-[1.313rem] text-justify leading-[1.875rem] text-[#718096]">
                     <p>{t("about.first_paragraph")}</p>
                     <br/>
                     <p>{t("about.second_paragraph")}</p>
