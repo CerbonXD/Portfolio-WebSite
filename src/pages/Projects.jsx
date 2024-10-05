@@ -36,7 +36,7 @@ export default function Projects() {
     };
 
     return (
-        <section className="mb-[4.375rem] min-h-[80vh]">
+        <section className="mb-[4.375rem] min-h-[80vh] px-5 lg:px-20">
             {/* Filter buttons */}
             <div className="flex justify-center gap-2.5 my-[4.375rem]">
                 {filters.map((f) => (
