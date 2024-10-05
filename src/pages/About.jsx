@@ -111,7 +111,7 @@ function GithubCalendarSection() {
                 {t("about.days.heading")} <span className={coloredTextCss}>{t("about.days.code.heading")}</span>
             </h1>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center" id="github_calendar">
                 <GitHubCalendar
                     username="CerbonXD"
                     blockSize={15}

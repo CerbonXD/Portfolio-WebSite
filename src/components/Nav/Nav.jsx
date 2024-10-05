@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { useState } from "react";
+import ReactDOM from "react-dom/client";
+import GitHubCalendar from "react-github-calendar";
 
 export default function Nav() {
     const [t] = useTranslation();
@@ -110,6 +112,19 @@ function LanguageAndThemeButtons() {
     const darkModeHandler = () => {
         setDark(!dark)
         document.body.classList.toggle("dark")
+
+        /* Workaround to update GitHub calendar color scheme */
+        const root = ReactDOM.createRoot(document.getElementById("github_calendar"))
+        root.render(<GitHubCalendar
+            username="CerbonXD"
+            blockSize={15}
+            blockMargin={5}
+            theme={{
+                light: ["#f5f5f5", "#6A1FC0"],
+                dark: ["#333", "#6A1FC0"]
+            }}
+            colorScheme={document.body.classList.value === "dark" ? "dark" : "light"}
+            fontSize={16}/>)
     }
     return (
         <>
