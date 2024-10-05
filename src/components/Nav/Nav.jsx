@@ -73,7 +73,7 @@ export default function Nav() {
                     <AnimatePresence>
                         {menuOpen && (
                             <motion.nav
-                                className="md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50"
+                                className="md:hidden absolute top-0 left-0 w-full h-screen bg-[#ffffff] dark:bg-[#1A202C] flex flex-col items-center justify-center z-50"
                                 variants={navVariants}
                                 initial="hidden"
                                 animate="visible"
