@@ -22,7 +22,7 @@ export default function Contact() {
     }
 
     return (
-        <section className="flex justify-center gap-4 px-20 h-screen max-w-[120rem] mx-auto">
+        <section className="flex justify-center gap-4 h-screen max-w-[120rem] mx-auto">
             <div className="flex flex-col justify-center gap-10 max-w-md w-full">
                 <div className="text-center text-4xl">
                     <h3>{t("contact.heading")} <span className="text-[#6A1FC0]">{t("contact.touch.heading")}</span></h3>
