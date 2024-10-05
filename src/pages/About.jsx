@@ -117,7 +117,7 @@ function GithubCalendarSection() {
                     blockSize={15}
                     blockMargin={5}
                     theme={{
-                        light: ["#e8e8e8", "#6A1FC0"],
+                        light: ["#f5f5f5", "#6A1FC0"],
                         dark: ["#333", "#6A1FC0"]
                     }}
                     fontSize={16}/>
