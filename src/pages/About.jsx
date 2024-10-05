@@ -34,7 +34,7 @@ const tools = [
 
 export default function About() {
     return (
-        <div className="px-5 lg:px-20 mb-[4.375rem] max-w-[120rem] mx-auto">
+        <div className="mb-[4.375rem] max-w-[120rem] mx-auto">
             <AboutMeSection/>
             <SkillsSection/>
             <ToolsSection/>
