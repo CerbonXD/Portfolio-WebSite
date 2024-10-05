@@ -38,5 +38,7 @@
   "contact.input.message.placeholder": "Message",
   "contact.form.submit.button": "Submit",
 
-  "footer.development_info": "Designed and Developed by Felipe Cerboncini"
+  "footer.development_info": "Designed and Developed by Felipe Cerboncini",
+
+  "page_not_found.warn": "It seems that the page you are looking for does not exist."
 }
