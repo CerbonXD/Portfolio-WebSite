@@ -57,7 +57,7 @@ export default function Projects() {
             </div>
 
             {/* Display projects */}
-            <div className="flex flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
+            <div className="flex justify-center flex-wrap gap-7 mt-10 max-w-[67.75rem] mx-auto">
                 {filteredProjects.slice(0, visibleProjects).map((project, index) => (
                     <motion.div
                         key={`${project.title}-${filter}`}
