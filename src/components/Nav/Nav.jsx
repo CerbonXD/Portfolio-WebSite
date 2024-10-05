@@ -6,26 +6,65 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { useState } from "react";
 
 export default function Nav() {
-    const [t] = useTranslation()
+    const [t] = useTranslation();
+    const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu
 
-    const navLinkCss = "underline-center-animation-light dark:underline-center-animation-dark"
+    const toggleMenu = () => setMenuOpen(!menuOpen); // Toggle menu function
+
+    const navLinkCss = "underline-center-animation-light dark:underline-center-animation-dark";
 
     return (
-        <div className="flex justify-between items-center h-full max-w-[120rem] mx-auto px-20">
-            <Logo/>
-            <nav>
-                <ul className="flex justify-center gap-7">
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
-                    <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
-                </ul>
-            </nav>
-            <LanguageAndThemeButtons/>
+        <div className="h-full px-5 lg:px-20">
+            <div className="flex justify-between items-center h-full max-w-[120rem] mx-auto ">
+                <Logo/>
+                <nav className="hidden md:block"> {/* Desktop Navigation */}
+                    <ul className="flex justify-center gap-7">
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
+                        <li><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
+                    </ul>
+                </nav>
+                <LanguageAndThemeButtons/>
+
+                <div className="md:hidden ml-5">
+                    {/* Hamburger icon for small screens */}
+                    <div onClick={toggleMenu}>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6 cursor-pointer transform -scale-x-100"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h7"
+                            />
+                        </svg>
+                    </div>
+
+                    {/* Mobile Navigation - Shows when menu is open */}
+                    {menuOpen && (
+                        <nav className="md:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-gray-900 flex flex-col items-center justify-center z-50">
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-5 top-10" onClick={toggleMenu}>✕</button>
+                            <ul className="flex flex-col items-center gap-8">
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/">{t("nav.home")}</NavLink></li>
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/about">{t("nav.about")}</NavLink></li>
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/experience">{t("nav.experience")}</NavLink></li>
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/projects">{t("nav.projects")}</NavLink></li>
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/resume">{t("nav.resume")}</NavLink></li>
+                                <li onClick={toggleMenu}><NavLink className={({isActive}) => isActive ? "border-b-[0.063rem] border-black dark:border-white py-[0.188rem] " : "" + navLinkCss} to="/contact">{t("nav.contact")}</NavLink></li>
+                            </ul>
+                        </nav>
+                    )}
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
 function Logo() {
@@ -44,10 +83,9 @@ function LanguageAndThemeButtons() {
         setDark(!dark)
         document.body.classList.toggle("dark")
     }
-
     return (
         <>
-            <div className="flex flex-grow justify-end items-center basis-0 gap-2">
+            <div className="flex justify-end items-center basis-0 flex-grow gap-2">
                 <button className="px-[0.875rem] py-[0.625rem] rounded-lg hover:bg-black/[.06] dark:hover:bg-white/[.06] active:scale-90 transition" onClick={() => document.getElementById("language_modal").showModal()}>
                     <svg
                         className="h-5 w-5 fill-current"
